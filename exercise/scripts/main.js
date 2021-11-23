@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
   cards.forEach(function(card) {
     card.addEventListener('click', function() {
+      selectedCards.push(card);
       // If the card has already been matched, ignore it.
       if (card.classList.contains('is-matched')) {
         return;
